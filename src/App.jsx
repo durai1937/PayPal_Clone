@@ -5,6 +5,8 @@ import RootLayout from './Components/Layout/RootLayout'
 import AccountSelection from './Components/AccountSelection/AccountSelection'
 import {Route,useNavigate , Routes, BrowserRouter, createBrowserRouter, createRoutesFromElements, RouterProvider} from "react-router-dom"
 import AccSecNav from './Components/Personal/AccSecNav'
+import Individual from './Components/Personal/Individual'
+import Business from './Components/Business/Business'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
         <Route path='Login' element={<Login/>} />
         <Route path='AccountSelection' element={<AccountSelection/>} />
         <Route path='AccSecNav' element={<AccSecNav/>} />
+        <Route path='Individual' element={<Individual />} />
+        <Route path='Business' element={<Business />} />
       </Route>
     )
   )
